@@ -1,0 +1,4 @@
+0 bukandaun
+1 sehat
+2 kuning
+3 bercak
