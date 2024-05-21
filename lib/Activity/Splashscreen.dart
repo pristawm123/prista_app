@@ -1,7 +1,8 @@
 // lib/splash_screen.dart
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:prista_app/main.dart';
+import 'package:prista_app/Activity/Wrapper.dart';
+// Update import path to the wrapper class
 
 class SplashScreen extends StatefulWidget {
   @override
@@ -15,11 +16,11 @@ class _SplashScreenState extends State<SplashScreen> {
 
     // Setelah beberapa detik (misalnya, 3 detik), pindah ke halaman berikutnya
     Timer(Duration(seconds: 2), () {
-      // Ganti halaman ke halaman utama aplikasi
+      // Ganti halaman ke halaman wrapper
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(
-          builder: (context) => MyHomePage(),
+          builder: (context) => Wrapper(), // Ganti ke Wrapper class
         ),
       );
     });

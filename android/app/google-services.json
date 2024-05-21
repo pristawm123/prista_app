@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "258673286172",
+    "project_id": "demota-22b51",
+    "storage_bucket": "demota-22b51.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:258673286172:android:8d042fe7eb4caf028793d9",
+        "android_client_info": {
+          "package_name": "com.example.prista_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "258673286172-hkq0b4ichodtg2chl86mo5ue9n9jdgqj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.prista_app",
+            "certificate_hash": "78efa6b90e204c639d5acdcd5e03e9e910bf7a76"
+          }
+        },
+        {
+          "client_id": "258673286172-g4s703fbh92ejt1vcvk4oe4qhbe7bp3k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVwkXPpS9L_5Wo6BMoIeQEXMin7s3aSRA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "258673286172-g4s703fbh92ejt1vcvk4oe4qhbe7bp3k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

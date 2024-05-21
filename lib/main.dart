@@ -3,10 +3,11 @@ import 'package:prista_app/Activity/Splashscreen.dart';
 import 'package:prista_app/Activity/DataPenyakitPage.dart';
 import 'package:prista_app/Activity/DeteksiPenyakitPage.dart';
 import 'package:prista_app/Activity/ProfilePage.dart';
+import 'package:firebase_core/firebase_core.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-
+  await Firebase.initializeApp();
   runApp(MyApp());
 }
 

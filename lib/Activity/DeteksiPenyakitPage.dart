@@ -5,6 +5,7 @@ import 'package:camera/camera.dart';
 import 'package:tflite/tflite.dart';
 
 class DeteksiPenyakitPage extends StatefulWidget {
+  
   const DeteksiPenyakitPage({Key? key}) : super(key: key);
 
   @override
