@@ -25,19 +25,19 @@ if (flutterVersionName == null) {
 
 android {
     namespace = "com.example.prista_app"
-    compileSdk = 34
+    compileSdkVersion 34
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
 
     defaultConfig {
-        applicationId = "com.example.prista_app"
+        applicationId "com.example.prista_app"
         minSdkVersion 23
         targetSdkVersion 34
-        versionCode = flutterVersionCode.toInteger()
-        versionName = flutterVersionName
+        versionCode flutterVersionCode.toInteger()
+        versionName flutterVersionName
         multiDexEnabled true
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -48,20 +48,23 @@ android {
             minifyEnabled false
             shrinkResources false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            signingConfig = signingConfigs.debug
+            signingConfig signingConfigs.debug
         }
+    }
+
+    viewBinding {
+        enabled true
     }
 }
 
 flutter {
-    source = "../.."
+    source '../..'
 }
 
 dependencies {
     implementation 'com.google.firebase:firebase-auth:21.1.0'
-    implementation 'com.google.firebase:firebase-core:21.1.0'  // Versi firebase-core
-    implementation 'com.google.android.gms:play-services-auth:20.3.0'  // Versi terbaru play-services-auth jika diperlukan
-    // Tambahkan dependensi Firebase lainnya sesuai kebutuhan
+    implementation 'com.google.firebase:firebase-core:21.1.0'
+    implementation 'com.google.android.gms:play-services-auth:20.3.0'
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation 'androidx.core:core-ktx:1.10.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
@@ -70,6 +73,3 @@ dependencies {
 }
 
 apply plugin: 'com.google.gms.google-services'
-apply plugin: 'com.android.application'
-apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
